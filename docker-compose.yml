@@ -1,0 +1,12 @@
+services:
+  chat:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env           # 服务器上需要有这个文件，本地绝不提交
+    networks:
+      - caddy_default  # 与 Caddy 同网络，Caddy 用容器名 "chat" 反代
+
+networks:
+  caddy_default:
+    external: true     # 使用 Caddy 已创建的网络，不新建

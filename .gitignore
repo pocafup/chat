@@ -1,0 +1,20 @@
+# 环境变量文件，含真实 API key，绝不提交
+.env
+
+# Python 编译缓存
+__pycache__/
+*.py[cod]
+
+# 虚拟环境目录（常见命名）
+venv/
+.venv/
+env/
+.env/
+
+# Poetry 虚拟环境（如果放在项目内）
+.venv/
+
+# 编辑器 / 系统文件
+.vscode/
+.idea/
+*.DS_Store

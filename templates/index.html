@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claude 聊天</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1>Claude 聊天</h1>
+    </header>
+
+    <!-- 消息展示区域 -->
+    <div class="messages" id="messages"></div>
+
+    <!-- 输入区域 -->
+    <div class="input-area">
+      <textarea
+        id="user-input"
+        placeholder="输入消息，按 Enter 发送，Shift+Enter 换行"
+        rows="1"
+      ></textarea>
+      <button id="send-btn">发送</button>
+    </div>
+  </div>
+
+  <script src="/static/chat.js"></script>
+</body>
+</html>
